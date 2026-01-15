@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -137,8 +166,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-divides-relation" id="toc-the-divides-relation" class="nav-link active" data-scroll-target="#the-divides-relation"><span class="header-section-number">2.1</span> The “Divides” Relation</a></li>
+  <li><a href="#defining-posets" id="toc-defining-posets" class="nav-link" data-scroll-target="#defining-posets"><span class="header-section-number">2.2</span> Defining Posets</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -162,8 +198,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="the-divides-relation" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="the-divides-relation"><span class="header-section-number">2.1</span> The “Divides” Relation</h2>
+<p>Let <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> be integers. Recall that we say <span class="math inline">\(m\)</span> /divides/ <span class="math inline">\(n\)</span>, and we write <span class="math inline">\(m \mid n\)</span> if there exists an integer <span class="math inline">\(q\)</span> such that <span class="math inline">\(mq = n\)</span>.</p>
+</section>
+<section id="defining-posets" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="defining-posets"><span class="header-section-number">2.2</span> Defining Posets</h2>
+<p>Let <span class="math inline">\(\preccurlyeq\)</span> denote a partial order relation.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

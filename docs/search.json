@@ -14,9 +14,29 @@
     "href": "intro.html",
     "title": "1  Introduction",
     "section": "",
-    "text": "This book contains the course notes for an informal one-semester seminar on category theory at CSU East Bay.",
+    "text": "This site contains the course notes for an informal one-semester seminar on category theory at CSU East Bay.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "posets.html",
+    "href": "posets.html",
+    "title": "2  Partially Ordered Sets",
+    "section": "",
+    "text": "2.1 The “Divides” Relation\nLet \\(m\\) and \\(n\\) be integers. Recall that we say \\(m\\) /divides/ \\(n\\), and we write \\(m \\mid n\\) if there exists an integer \\(q\\) such that \\(mq = n\\).",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Partially Ordered Sets</span>"
+    ]
+  },
+  {
+    "objectID": "posets.html#defining-posets",
+    "href": "posets.html#defining-posets",
+    "title": "2  Partially Ordered Sets",
+    "section": "2.2 Defining Posets",
+    "text": "2.2 Defining Posets\nLet \\(\\preccurlyeq\\) denote a partial order relation.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Partially Ordered Sets</span>"
     ]
   }
 ]
