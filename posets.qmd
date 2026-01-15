@@ -90,4 +90,5 @@ Show that the following are posets:
 <summary>Solution</summary>
 Every group is a subgroup of itself, so the subgroup relation is reflexive.
 </details>
-</details>
+
+## Advanced Exercises
