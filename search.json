@@ -4,19 +4,19 @@
     "href": "index.html",
     "title": "Categories for the Curious",
     "section": "",
-    "text": "Introduction\nThis book contains the course notes for an informal one-semester seminar on category theory at CSU East Bay.",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
     "crumbs": [
-      "Introduction"
+      "Preface"
     ]
   },
   {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "2  Summary",
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
     "section": "",
-    "text": "In summary, this book has no content whatsoever.",
+    "text": "This book contains the course notes for an informal one-semester seminar on category theory at CSU East Bay.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
   }
 ]
