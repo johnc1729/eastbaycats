@@ -24,7 +24,7 @@
     "href": "posets.html",
     "title": "2  Partially Ordered Sets",
     "section": "",
-    "text": "2.1 The “Divides” Relation\nLet \\(m\\) and \\(n\\) be integers. Recall that we say \\(m\\) /divides/ \\(n\\), and we write \\(m \\mid n\\) if there exists an integer \\(q\\) such that \\(mq = n\\).",
+    "text": "2.1 The “Divides” Relation\nLet \\(m\\) and \\(n\\) be integers. Recall that we say \\(m\\) divides \\(n\\), and we write \\(m \\mid n\\) if there exists an integer \\(q\\) such that \\(mq = n\\). For example, \\(3\\) divides \\(6\\) since \\(3 \\cdot 2 = 6\\), and \\(-5\\) divides \\(10\\) since \\(-5 \\cdot 2 = 10\\).",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Partially Ordered Sets</span>"
     ]
@@ -35,6 +35,16 @@
     "title": "2  Partially Ordered Sets",
     "section": "2.2 Defining Posets",
     "text": "2.2 Defining Posets\nLet \\(\\preccurlyeq\\) denote a partial order relation.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Partially Ordered Sets</span>"
+    ]
+  },
+  {
+    "objectID": "posets.html#the-divides-relation",
+    "href": "posets.html#the-divides-relation",
+    "title": "2  Partially Ordered Sets",
+    "section": "",
+    "text": "Exercise 2.1 Show that if \\(a\\), \\(b\\), and \\(c\\) are integers, and \\(a \\mid b\\) and \\(b \\mid c\\), then \\(a \\mid c\\).",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Partially Ordered Sets</span>"
     ]
