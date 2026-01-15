@@ -2,29 +2,35 @@
 
 ## The "Divides" Relation
 
-::: {#dfn-2.1}
+::: {#def-divides}
 Let $m$ and $n$ be integers. We say $m$ *divides* $n$, and we write $m \mid n$ if there exists an integer $q$ such that $mq = n$.
 :::
 
 
-For example, $3$ divides $6$ since $3 \cdot 2 = 6$, and $-5$ divides $10$ since $-5 \cdot 2 = 10$.
+For example, $3$ divides $6$ since $3 \cdot 2 = 6$, and $-5$ divides $15$ since $-5 \cdot 3 = 15$.
 
 ::: {#exr-2.1}
 Show that for any integer $a$ we have $a \mid a$.
 :::
 
-This is called *reflexivity*, and we say that $\mid$ is *reflexive* because it satisfies this property. For all that follows, we denote by $\mathbb{N}$ the *natural numbers*, consisting of the non-negative integers $0, 1, 2, \dots$. Take special care to notice that *we are including zero in this set*.[^1] It will soon be apparent why we do this.
+<details>
+<summary>Solution</summary>
+We have $a \cdot 1 = a$, so $a$ satisfies @def-divides with $1$ in place of $q$.
+</details>
 
-Another important note about the "divides" relation is that saying "$a$ divides $b$" is *not* the same as saying "$b$ is divisible by $a$."
+This is called *reflexivity*, and we say that $\mid$ is *reflexive* because it satisfies this property. For all that follows, we denote by $\mathbb{N}$ the *natural numbers*, consisting of the non-negative integers $0, 1, 2, \dots$. Take special care that *we are including zero in this set*.[^1] It will soon be apparent why we do this.
 
 [^1]: This differs from another convention that excludes zero, which you may be used to.
 
+Another important note about the "divides" relation is that to say "$a$ divides $b$" is not the same as saying "$b/a$ is an integer." The latter is a statement about the result of applying the division binary *operation* to $a$ and $b$.[^2] 
+
+[^2]: A binary operation on a set $X$ is a mapping $X \times X \to X$. A relation is not a mapping; it is simply a statement (something that is either true or false).
 
 ::: {#exr-2.2}
-Show that for natural numbers $a$ and $b$, if $a \mid b$ and $b \mid a$, then $a = b$.[^2]
+Show that for natural numbers $a$ and $b$, if $a \mid b$ and $b \mid a$, then $a = b$.[^3]
 :::
 
-[^2]: If we allow $a$ and $b$ to be negative, then the most general statement we can make is that the magnitudes are equal.
+[^3]: If we allow $a$ and $b$ to be negative, then the most general statement we can make is that the magnitudes are equal.
 
 <details>
 <summary>Solution</summary>
