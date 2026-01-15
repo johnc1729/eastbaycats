@@ -84,9 +84,10 @@ Show that the following are posets:
 
 3. Given a field extension finite, Galois field extension $E/F$, there is a partial order on the intermediate fields $F \subseteq K \subseteq E$ under the inclusion relation: $K_1 \preccurlyeq K_2$ if and only if $K_1 \subseteq K_2$.
 :::
-<details>
+</details>
 
-<summary>Solutions</summary>
+<details>
+<summary>Solution</summary>
 Every group is a subgroup of itself, so the subgroup relation is reflexive.
 </details>
 </details>

@@ -246,7 +246,7 @@ Solution
 If <span class="math inline">\(a \mid b\)</span>, then there exists an integer <span class="math inline">\(k_1\)</span> such that <span class="math inline">\(a k_1 = b\)</span>. If <span class="math inline">\(b \mid c\)</span>, then there exists an integer <span class="math inline">\(k_2\)</span> such that <span class="math inline">\(b k_2 = c\)</span>. Hence, <span class="math inline">\(a (k_1 k_2) = (a k_1) k_2 = b k_2 = c\)</span>. So <span class="math inline">\(a\)</span> divides <span class="math inline">\(c\)</span> with <span class="math inline">\(k_1 k_2\)</span> in place of <span class="math inline">\(q\)</span> in <a href="#def-divides" class="quarto-xref">Definition&nbsp;<span>2.1</span></a>.
 </details>
 <p>This property is called <em>transitivity</em>, and we say that <span class="math inline">\(\mid\)</span> is a <em>transitive</em> relation on the integers.</p>
-<p>For all that follows, we denote by <span class="math inline">\(\mathbb{N}\)</span> the <em>natural numbers</em>, consisting of the non-negative integers <span class="math inline">\(0, 1, 2, \dots\)</span>. Take special care that <em>we are including zero in this set</em>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> It will soon be apparent why we do this.</p>
+<p>For all that follows, we denote by <span class="math inline">\(\mathbb{N}\)</span> the <em>natural numbers</em>, consisting of the non-negative integers <span class="math inline">\(0, 1, 2, \dots\)</span>. Take special care that we are including zero in this set.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> It will soon be apparent why we do this.</p>
 <div id="exr-2.3" class="theorem exercise">
 <p><span class="theorem-title"><strong>Exercise 2.3</strong></span> Show that for natural numbers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, if <span class="math inline">\(a \mid b\)</span> and <span class="math inline">\(b \mid a\)</span>, then <span class="math inline">\(a = b\)</span>.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
 </div>
@@ -272,15 +272,23 @@ If <span class="math inline">\(b \neq 0\)</span> (i.e., <span class="math inline
 <li><p>For an arbitrary set <span class="math inline">\(X\)</span>, <span class="math inline">\((\mathscr{P}(X), \subseteq)\)</span>, where <span class="math inline">\(\mathscr{P}(X)\)</span> is the <em>power set</em> of <span class="math inline">\(X\)</span>, the set of all of its subsets.</p></li>
 </ol>
 </div>
-<p>The following are more advanced examples, and may be skipped.</p>
-<div id="exr-2.6" class="theorem exercise">
-<p><span class="theorem-title"><strong>Exercise 2.6</strong></span> Show that the following are posets:</p>
+<details>
+<summary>
+Advanced Exercises (!)
+</summary>
+<p>These assume prior knowledge and may be safely skipped. ::: {#exr-2.6} Show that the following are posets:</p>
 <ol type="1">
 <li><p>For an arbitrary group <span class="math inline">\(G\)</span>, <span class="math inline">\((\mathscr{A}(G), \leq)\)</span> where the set <span class="math inline">\(\mathscr{A}(G)\)</span> consists of the subgroups of <span class="math inline">\(G\)</span> and <span class="math inline">\(\leq\)</span> is the “subgroup” relation.</p></li>
 <li><p>For a path-connected, locally path-connected, semilocally simply-connected topological space <span class="math inline">\(X\)</span> with a distinguished basepoint <span class="math inline">\(x_0 \in X\)</span>, the set of basepoint-preserving isomorphism classes of path-connected covering spaces <span class="math inline">\(p : (\tilde{X}, \tilde{x}_0 \to (X, x_0)\)</span> is a poset under the relation: <span class="math inline">\((\tilde{X}_1, \tilde{x}_1) \preccurlyeq (\tilde{X}_2, \tilde{x}_2)\)</span> if and only if there exists a basepoint-preserving covering map <span class="math inline">\(f : \tilde{X}_2 \to \tilde{X}_1\)</span> such that <span class="math inline">\(p_1 \circ f = p_2\)</span> (this can be rephrased less precisely by saying <span class="math inline">\(X_2\)</span> is a covering of <span class="math inline">\(X_1\)</span>) <span class="citation" data-cites="Hatcher2002">(<a href="references.html#ref-Hatcher2002" role="doc-biblioref">Hatcher 2002, 68</a>)</span>.</p></li>
-<li><p>The field extensions.</p></li>
+<li><p>Given a field extension finite, Galois field extension <span class="math inline">\(E/F\)</span>, there is a partial order on the intermediate fields <span class="math inline">\(F \subseteq K \subseteq E\)</span> under the inclusion relation: <span class="math inline">\(K_1 \preccurlyeq K_2\)</span> if and only if <span class="math inline">\(K_1 \subseteq K_2\)</span>. :::</p>
+<details></details></li>
 </ol>
-</div>
+<summary>
+Solutions
+</summary>
+Every group is a subgroup of itself, so the subgroup relation is reflexive.
+</details>
+
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
@@ -293,7 +301,7 @@ Hatcher, Allen. 2002. <em>Algebraic Topology</em>. USA: Cambridge University Pre
 <hr>
 <ol>
 <li id="fn1"><p>A binary operation on a set <span class="math inline">\(X\)</span> is a mapping <span class="math inline">\(X \times X \to X\)</span>. A relation is not a mapping; it is simply a statement (something that is either true or false).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>This differs from another convention that excludes zero, which you may be used to.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>This differs from another convention that excludes zero, which we may be used to.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>If we allow <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> to be negative, then the most general statement we can make is that the magnitudes are equal.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
