@@ -72,9 +72,10 @@ Show that the following are posets:
 2. For an arbitrary set $X$, $(\mathscr{P}(X), \subseteq)$, where $\mathscr{P}(X)$ is the *power set* of $X$, the set of all of its subsets.
 :::
 
-<details>
-<summary>Advanced Exercises (!)</summary>
+## Advanced Exercises
+
 These assume prior knowledge and may be safely skipped.
+
 ::: {#exr-2.6}
 Show that the following are posets:
 
@@ -84,11 +85,10 @@ Show that the following are posets:
 
 3. Given a field extension finite, Galois field extension $E/F$, there is a partial order on the intermediate fields $F \subseteq K \subseteq E$ under the inclusion relation: $K_1 \preccurlyeq K_2$ if and only if $K_1 \subseteq K_2$.
 :::
-</details>
 
 <details>
 <summary>Solution</summary>
 Every group is a subgroup of itself, so the subgroup relation is reflexive.
 </details>
 
-## Advanced Exercises
+
