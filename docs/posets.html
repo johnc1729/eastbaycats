@@ -200,9 +200,36 @@ window.Quarto = {
 
 <section id="the-divides-relation" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="the-divides-relation"><span class="header-section-number">2.1</span> The “Divides” Relation</h2>
-<p>Let <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> be integers. Recall that we say <span class="math inline">\(m\)</span> <em>divides</em> <span class="math inline">\(n\)</span>, and we write <span class="math inline">\(m \mid n\)</span> if there exists an integer <span class="math inline">\(q\)</span> such that <span class="math inline">\(mq = n\)</span>. For example, <span class="math inline">\(3\)</span> divides <span class="math inline">\(6\)</span> since <span class="math inline">\(3 \cdot 2 = 6\)</span>, and <span class="math inline">\(-5\)</span> divides <span class="math inline">\(10\)</span> since <span class="math inline">\(-5 \cdot 2 = 10\)</span>.</p>
+<div id="dfn-2.1">
+<p>Let <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> be integers. We say <span class="math inline">\(m\)</span> <em>divides</em> <span class="math inline">\(n\)</span>, and we write <span class="math inline">\(m \mid n\)</span> if there exists an integer <span class="math inline">\(q\)</span> such that <span class="math inline">\(mq = n\)</span>.</p>
+</div>
+<p>For example, <span class="math inline">\(3\)</span> divides <span class="math inline">\(6\)</span> since <span class="math inline">\(3 \cdot 2 = 6\)</span>, and <span class="math inline">\(-5\)</span> divides <span class="math inline">\(10\)</span> since <span class="math inline">\(-5 \cdot 2 = 10\)</span>.</p>
 <div id="exr-2.1" class="theorem exercise">
-<p><span class="theorem-title"><strong>Exercise 2.1</strong></span> Show that if <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, and <span class="math inline">\(c\)</span> are integers, and <span class="math inline">\(a \mid b\)</span> and <span class="math inline">\(b \mid c\)</span>, then <span class="math inline">\(a \mid c\)</span>.</p>
+<p><span class="theorem-title"><strong>Exercise 2.1</strong></span> Show that for any integer <span class="math inline">\(a\)</span> we have <span class="math inline">\(a \mid a\)</span>.</p>
+</div>
+<p>This is called <em>reflexivity</em>, and we say that <span class="math inline">\(\mid\)</span> is <em>reflexive</em> because it satisfies this property. For all that follows, we denote by <span class="math inline">\(\mathbb{N}\)</span> the <em>natural numbers</em>, consisting of the non-negative integers <span class="math inline">\(0, 1, 2, \dots\)</span>. Take special care to notice that <em>we are including zero in this set</em>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> It will soon be apparent why we do this.</p>
+<p>Another important note about the divides relation</p>
+<div id="exr-2.2" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercise 2.2</strong></span> Show that for natural numbers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, if <span class="math inline">\(a \mid b\)</span> and <span class="math inline">\(b \mid a\)</span>, then <span class="math inline">\(a = b\)</span>.</p>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>If <span class="math inline">\(a \mid b\)</span>, then there exists a natural number <span class="math inline">\(k_1\)</span> such that <span class="math inline">\(a k_1 = b\)</span>. Similarly, <span class="math inline">\(b \mid a\)</span> implies there exists a natural number <span class="math inline">\(k_2\)</span> such that <span class="math inline">\(b k_2 = a\)</span>. Hence, <span class="math inline">\(b = a k_1 = b k_1 k_2\)</span>. Thus, <span class="math inline">\(b (1 - k_1 k_2) = 0\)</span>. Then either <span class="math inline">\(b = 0\)</span> or <span class="math inline">\(k_1 = k_2 = 1\)</span>.</p>
+</div>
+</div>
+</div>
+<div id="exr-2.3" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercise 2.3</strong></span> Show that if <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, and <span class="math inline">\(c\)</span> are integers, and <span class="math inline">\(a \mid b\)</span> and <span class="math inline">\(b \mid c\)</span>, then <span class="math inline">\(a \mid c\)</span>.</p>
 </div>
 </section>
 <section id="defining-posets" class="level2" data-number="2.2">
@@ -210,6 +237,12 @@ window.Quarto = {
 <p>Let <span class="math inline">\(\preccurlyeq\)</span> denote a partial order relation.</p>
 
 
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>This differs from another convention that excludes zero, which you may be used to.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->

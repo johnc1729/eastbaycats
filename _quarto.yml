@@ -4,8 +4,9 @@ project:
 
 book:
   title: "Categories for the Curious"
+  subtitle: "A Light Intro to Category Theory"
   author: "John Cavanaugh"
-  date: "1/14/2026"
+  date: today
   chapters:
     - index.qmd
     - intro.qmd
@@ -19,7 +20,10 @@ format:
     theme:
       - cosmo
       - brand
+    toc-depth: 4
   pdf:
+    toc: true
+    number-sections: true
     documentclass: scrreprt
 
 

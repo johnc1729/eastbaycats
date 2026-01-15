@@ -24,7 +24,7 @@
     "href": "posets.html",
     "title": "2  Partially Ordered Sets",
     "section": "",
-    "text": "2.1 The “Divides” Relation\nLet \\(m\\) and \\(n\\) be integers. Recall that we say \\(m\\) divides \\(n\\), and we write \\(m \\mid n\\) if there exists an integer \\(q\\) such that \\(mq = n\\). For example, \\(3\\) divides \\(6\\) since \\(3 \\cdot 2 = 6\\), and \\(-5\\) divides \\(10\\) since \\(-5 \\cdot 2 = 10\\).",
+    "text": "2.1 The “Divides” Relation\nFor example, \\(3\\) divides \\(6\\) since \\(3 \\cdot 2 = 6\\), and \\(-5\\) divides \\(10\\) since \\(-5 \\cdot 2 = 10\\).\nThis is called reflexivity, and we say that \\(\\mid\\) is reflexive because it satisfies this property. For all that follows, we denote by \\(\\mathbb{N}\\) the natural numbers, consisting of the non-negative integers \\(0, 1, 2, \\dots\\). Take special care to notice that we are including zero in this set.1 It will soon be apparent why we do this.\nAnother important note about the divides relation",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Partially Ordered Sets</span>"
     ]
@@ -44,7 +44,17 @@
     "href": "posets.html#the-divides-relation",
     "title": "2  Partially Ordered Sets",
     "section": "",
-    "text": "Exercise 2.1 Show that if \\(a\\), \\(b\\), and \\(c\\) are integers, and \\(a \\mid b\\) and \\(b \\mid c\\), then \\(a \\mid c\\).",
+    "text": "Let \\(m\\) and \\(n\\) be integers. We say \\(m\\) divides \\(n\\), and we write \\(m \\mid n\\) if there exists an integer \\(q\\) such that \\(mq = n\\).\n\n\n\nExercise 2.1 Show that for any integer \\(a\\) we have \\(a \\mid a\\).\n\n\n\n\nExercise 2.2 Show that for natural numbers \\(a\\) and \\(b\\), if \\(a \\mid b\\) and \\(b \\mid a\\), then \\(a = b\\).\n\n\n\n\n\n\n\nNote\n\n\n\n\n\nIf \\(a \\mid b\\), then there exists a natural number \\(k_1\\) such that \\(a k_1 = b\\). Similarly, \\(b \\mid a\\) implies there exists a natural number \\(k_2\\) such that \\(b k_2 = a\\). Hence, \\(b = a k_1 = b k_1 k_2\\). Thus, \\(b (1 - k_1 k_2) = 0\\). Then either \\(b = 0\\) or \\(k_1 = k_2 = 1\\).\n\n\n\n\nExercise 2.3 Show that if \\(a\\), \\(b\\), and \\(c\\) are integers, and \\(a \\mid b\\) and \\(b \\mid c\\), then \\(a \\mid c\\).",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Partially Ordered Sets</span>"
+    ]
+  },
+  {
+    "objectID": "posets.html#footnotes",
+    "href": "posets.html#footnotes",
+    "title": "2  Partially Ordered Sets",
+    "section": "",
+    "text": "This differs from another convention that excludes zero, which you may be used to.↩︎",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Partially Ordered Sets</span>"
     ]
